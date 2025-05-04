@@ -44,7 +44,7 @@ public class DatabaseFunctions {
 
         try {
             queryStatement = dbConnection.prepareStatement("""
-                    insert into customers (id, first_name, last_name, email, phone_number, password, username, gender, weight, dob,
+                    insert into customers (id, first_name,id, last_name, email, phone_number, password, username, gender, weight, dob,
                     monthly_plan, nic, is_active, salt, address)
                     values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);""");
 
